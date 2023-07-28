@@ -8,7 +8,7 @@ import { validate } from 'src/config';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: `../.env.${process.env.NODE_ENV}`,
+      envFilePath: `.env.${process.env.NODE_ENV}`,
       validate,
     }),
   ],
